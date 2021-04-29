@@ -1,5 +1,7 @@
 <h1>New Post</h1>
 
+<%= link_to 'Back to home', posts_path%>
+
 <%= form_with model: @post do |form|%>
     <div>
         <%= form.label :title %>
