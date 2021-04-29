@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root "posts#index"
+  # root "posts#index"
+  root "application#index"
 
   resources :posts
   # get "/posts", to: "posts#index"

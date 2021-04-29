@@ -1,24 +1,50 @@
-# README
+# Mini Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on rails project that make a simplified blog.
 
-Things you may want to cover:
+## Enviroment
 
-* Ruby version
+Make sure you have the following installed, with preference for the same version as stated bellow:
 
-* System dependencies
+* Ruby 3.0.0p0
+* SQLite 3.3.1
+* Node.js 15.14.0
+* Yarn 1.12.10
+* Rails 6.1.3.1
 
-* Configuration
+## Setup
 
-* Database creation
+Having all that is necessary, run the following in the project directory:
 
-* Database initialization
+````
+bundle install
+rake db:create
+rake db:migrate
+````
 
-* How to run the test suite
+## Run Server
 
-* Services (job queues, cache servers, search engines, etc.)
+To the Ruby on Rails server locally, run the following inside the project directory:
 
-* Deployment instructions
+````
+bin/rails server
+````
 
-* ...
+## Services
+
+
+* `/posts`
+
+Route that show the list of already created posts
+
+* `/posts/new`
+
+Route that show a form to create new posts
+
+* `/posts/:id`
+
+Route that show information about a certain post
+
+* `/posts/:id/edit`
+
+Route that permit the user modify a certain post
